@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="css/materialize.min.css">
+    <title>Contact List</title>
+    <style>
+        #add {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="center">Contact List</h1>
+            <input type="text" placeholder="Search For Name...." id="search">
+        </div>
+    </header>
+    <section>
+        <!-- <button class="btn-floating btn-large waves-effect waves-light teal" id="add">+</button> -->
+        <a href="#modal1" class="btn-floating btn-large waves-effect waves-light teal modal-trigger" id="add">+</a>
+        <div class="container" id="field">
+            <div class="collection with-header">
+                <h4 class="collection-header" style="margin: 0;">A</h4>
+                <a href="#!" class="collection-item">Alvin</a>
+                <a href="#!" class="collection-item active">Alvin</a>
+                <a href="#!" class="collection-item">Alvin</a>
+                <a href="#!" class="collection-item">Alvin</a>
+            </div>
+        </div>
+    </section>
+
+
+  <!-- Add Contact -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Add Contact</h4>
+      <div class="row">
+        <div class="input-field col s12">
+            <input id="name" type="text">
+            <label for="name">Name</label>
+        </div>
+        <div class="input-field col s12">
+            <input id="phone" type="text">
+            <label for="phone">Phone Number</label>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="addContact">Add</a>
+    </div>
+  </div>
+
+  <!-- Show Contact -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4 id="nameF"></h4>
+      <p>Phone number :</p>
+      <h5 id="phoneF"></h5>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-red btn-flat" id="deleteContact">Delete</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
